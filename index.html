@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evening Walk</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <!-- Camera -->
+        <a-entity camera look-controls position="0 1.6 0"></a-entity>
+
+        <!-- Lights -->
+        <a-entity
+        light="type: point; castShadow: true; color: #e6ca14; intensity: 2.35"
+        position="-5.92951 8.39487 1.29438"
+        ></a-entity>
+        <a-entity light="type: ambient;"> </a-entity>
+        
+        <!-- Road -->
+        <a-gltf-model src="assets/scene_road.gltf" position="0 0 0" scale="1 1 1"></a-gltf-model>
+
+        <!-- Streetlights -->
+        <a-gltf-model src="assets/scene_LAMP POST.gltf" position="-5 0 -2" scale="1 1 1"></a-gltf-model>
+
+        <!-- Cat -->
+        <a-gltf-model src="assets/scene_cat.gltf" position="0 0 3" scale="1 1 1"></a-gltf-model>
+
+        <!-- Girl -->
+        <a-gltf-model src="assets/scene_girl.gltf" position="0 0 3" scale="1 1 1"></a-gltf-model>
+        
+        <!-- Bench -->
+        <a-gltf-model src="assets/scene_bench.gltf" position="0 0 3" scale="1 1 1"></a-gltf-model>
+    
+    </a-scene>
+</body>
+</html>
